@@ -19,6 +19,6 @@ interface Messages {
 export const MESSAGES: Messages = {
   TITLE: 'Astronaut',
   DESCRIPTION: 'Astronaut',
-  VIEW_IN_AR_TEXT: 'View 3D on your phone',
+  VIEW_IN_AR_TEXT: 'View in AR',
   WELCOME_DIALOG_BUTTON: 'Start',
 }
