@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  } */
+
+  :root {
+    --background: 223 0% 0%;
+    --foreground: 214 0% 100%;
+
+    --muted: 0 0% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 223 0% 0%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --card: 223 0% 0%;
+    --card-foreground: 214 0% 100%;
+
+    --border: 214 0% 100%;
+    --input: 214 0% 100%;
+
+    --primary: 45 95% 49%;
+    --primary-foreground: 223 0% 0%;
+
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 214 0% 100%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 214 0% 100%;
+
+    --radius: 9999px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+:root {
+  /* font-family: Cera Pro, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Cera Pro;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light; */
+  /* color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+#arjs-video {
+  max-width: initial;
+}
+
+model-viewer::part(default-ar-button) {
+  display: none;
+}
