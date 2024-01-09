@@ -98,7 +98,7 @@ function Page() {
         // animation-crossfade-duration='0'
         src={encodeURI(
           WEBSITE_URL +
-            '/assets/rawModels/model.glb?' +
+            '/assets/rawModels/Astronaut.glb?' +
             'title=' +
             MESSAGES?.TITLE +
             '&link=' +
@@ -108,7 +108,7 @@ function Page() {
         )}
         ios-src={encodeURI(
           WEBSITE_URL +
-            '/assets/rawModels/model.usdz' +
+            '/assets/rawModels/Astronaut.usdz' +
             '#checkoutTitle=' +
             MESSAGES?.TITLE +
             '&checkoutSubtitle=' +
