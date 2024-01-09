@@ -1,11 +1,28 @@
+import { ROUTES } from '@/const';
 import VRWrapper from '../components/VRWrapper';
-import { Model as Astronaut } from './../models/ASTRONAUT';
+import { Model as Astronaut } from '../models/ASTRONAUT';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 function Page() {
   return (
-    <VRWrapper arEnabled={false} optionsEnabled patternUrl='data/pattern.patt'>
-      <Astronaut />
-    </VRWrapper>
+    <>
+      <VRWrapper patternUrl={'/data/pattern-hiro.patt'} arEnabled={false}>
+        <Astronaut />
+      </VRWrapper>
+      <div className='z-30 fixed bottom-0 left-0 right-0 w-full flex flex-col gap-2 pb-4 px-4'>
+        <Link to={ROUTES.MARKER}>
+          <Button
+            type='button'
+            size='xl'
+            variant='outline'
+            className='w-full uppercase bg-background'
+          >
+            Enable AR
+          </Button>
+        </Link>
+      </div>
+    </>
   );
 }
 

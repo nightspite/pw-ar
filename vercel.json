@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/vr", "dest": "/vr" },
+    { "src": "/marker", "dest": "/marker" },
+    { "src": "/model-viewer", "dest": "/model-viewer" },
+    { "src": "/problem", "dest": "/problem" }
+  ]
+}

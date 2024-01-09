@@ -2,12 +2,12 @@ export const ROUTES = {
   HOME: '/',
   VR: '/vr',
   MARKER: '/marker',
-  IMAGE_MARKER: '/image-marker',
   MODEL_VIEWER: '/model-viewer',
+  PROBLEM: '/problem',
 }
 
 export const WEBSITE_URL = 'https://pw-ar.vercel.app';
-export const REDIRECT_URL = 'https://pw-ar.vercel.app';
+export const REDIRECT_URL = 'https://pw-ar.vercel.app/problem';
 
 interface Messages {
   TITLE: string;
@@ -17,8 +17,8 @@ interface Messages {
 }
 
 export const MESSAGES: Messages = {
-  TITLE: 'Model',
-  DESCRIPTION: 'Model description',
+  TITLE: 'Astronaut',
+  DESCRIPTION: 'Astronaut',
   VIEW_IN_AR_TEXT: 'View 3D on your phone',
   WELCOME_DIALOG_BUTTON: 'Start',
 }
